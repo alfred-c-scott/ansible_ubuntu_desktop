@@ -1,5 +1,5 @@
 ---
-- name: localhost demo
+- name: Ubuntu Dell-Inspiron setup
   hosts: localhost
   become: yes
   vars:
