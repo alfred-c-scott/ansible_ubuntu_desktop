@@ -1,5 +1,5 @@
 ---
-- name: Ubuntu Dell-Inspiron setup
+- name: Ubuntu 22.04 Dell-Inspiron setup
   hosts: localhost
   become: yes
   vars:
@@ -17,6 +17,10 @@
         name: gnome-shell-extensions,  gnome-shell-extensions
         state: latest
 
+    - name: install python virtualenv package
+      apt:
+        name: python3.10-venv
+        state: present
 
     - name: install postman
       snap:
