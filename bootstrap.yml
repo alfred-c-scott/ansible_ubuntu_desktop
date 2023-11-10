@@ -1,0 +1,37 @@
+---
+- name: localhost demo
+  hosts: localhost
+  become: yes
+  vars:
+    ansible_connection: local
+    ansible_python_interpreter: "{{ ansible_playbook_python }}"
+  tasks:
+
+    - name: udpate package manager & full upgrade
+      apt:
+        update_cache: yes
+        upgrade: full
+
+    - name: install gnome extensions support
+      apt:
+        name: gnome-shell-extensions,  gnome-shell-extensions
+        state: latest
+
+
+    - name: install postman
+      snap:
+        name: postman
+    
+    - name: install vscode
+      snap:
+        name: code
+        classic: true
+
+    - name: install discord
+      snap:
+        name: discord
+
+    - name: vmware apt dependencies - build-essential
+      apt:
+        name: build-essential
+        state: latest
