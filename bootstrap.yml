@@ -22,6 +22,11 @@
         name: python3.10-venv
         state: present
 
+    - name: install psycop2g compile from source dependencies for python3
+      apt:
+        name: libpq-dev, python3-dev
+        state: present
+
     - name: install postman
       snap:
         name: postman
