@@ -8,3 +8,7 @@ Clone this repository
 Run playbook with:
 
 `ansible-playbook bootstrap.yml --ask-become-pass`
+
+## Todo
+
+Need to automate installation of pgadmin, vmware player
