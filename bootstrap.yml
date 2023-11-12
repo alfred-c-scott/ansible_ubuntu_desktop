@@ -44,3 +44,8 @@
       apt:
         name: build-essential
         state: latest
+
+    - name: install curl
+      apt:
+        name: curl
+        state: latest
