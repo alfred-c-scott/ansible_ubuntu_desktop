@@ -1,4 +1,4 @@
-# Playbook for dell-inspiron laptop
+# Playbook for Ubuntu 22.04 desktop setup
 Install ansible with
 
 `sudo apt install ansible`
