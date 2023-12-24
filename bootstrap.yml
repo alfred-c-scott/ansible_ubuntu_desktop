@@ -53,3 +53,9 @@
     - name: install brave
       snap:
         name: brave
+
+    - name: install bitwarden
+      snap:
+        name: bitwarden
+
+    
