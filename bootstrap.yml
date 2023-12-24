@@ -49,3 +49,7 @@
       apt:
         name: curl
         state: latest
+
+    - name: install brave
+      snap:
+        name: brave
